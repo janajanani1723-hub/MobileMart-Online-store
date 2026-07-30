@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<body>
+<header>
+<h1>MobileMart</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Mobiles</a>
+<a href="#">Offers</a>
+<a href="#">Contact</a>
+<a href="#">Cart(<span id="cartCount">0</span>)</a>
+<a href="payment.html">
+    <button>Checkout</button>
+</a>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</nav>
+<link rel="stylesheet"href="style.css">
+</header>
+<section class="hero">
+<h2>Welcome to MobileMart Latest Smartphones at Best Prices.</h2>
+<p>Explore MobileMart X1,MobileMart Neo,MobileMart Plus,MobileMart Pro,MobileMart Ultra </p>
+<button onclick="shopNow()">Shop Now</button>
+</section>
+<section class="search">
+    <input type="text" id="searchInput" placeholder="Search Mobile">
+    <button onclick="searchPhone()">Search</button>
+</section>
+<div id="buyMessage" style="display:none; background-color:#FF5722; color:white; text-align:center; padding:15px; font-size:20px; font-weight:bold; margin:10px; border-radius:8px;">
+   ❤️ 🎉 Thank you for shopping at MobileMart! 🎉📱
+</div>
+<section class="products">
+<div class="card"> 
+<img src="images/phone1.jpeg" alt="MobileMart X1">
+<h3>MobileMart X1</h3>
+<p>Price:₹15900</p>
+<p>RAM: 6 GB</p>
+<P>Storage 100 GB</P>
+<button onclick="addToCart()">Add to Cart</button>
+<button onclick="buynow()">buynow</button>
+<button onclick="addWishlist(this)">🤍 Wishlist</button>
+<div class="quantity">
+<button onclick="changeQuantity('qty1','total1',15900,-1)">-</button>
+<span id="qty1">1</span>
+<button onclick="changeQuantity('qty1','total1',15900,1)">+</button>
+</div>
+<p>Total: ₹<span id="total1">15900</span></p>
+</div>
+<div class="card">
+<img src="images/phone2.jpeg" alt="MobileMart Plus">
+<h3>MobileMart Plus</h3>
+<p>price:₹23999</p>
+<p>RAM:7 GB</p>
+<p>storage:119 GB</p>
+<button onclick="addToCart()">Add to Cart</button>
+<button onclick="buynow()">buynow</button>
+<button onclick="addWishlist(this)">🤍 Wishlist</button>
+<div class="quantity">
+<button onclick="changeQuantity('qty2','total2',23999,-1)">-</button>
+<span id="qty2">1</span>
+<button onclick="changeQuantity('qty2','total2',23999,1)">+</button>
+</div>
+<p>Total: ₹<span id="total2">23999</span></p>
+</div>
+<div class="card">
+<img src="images/phone3.jpeg" alt="MobileMart Neo">
+<h3>MobileMart Neo</h3>
+<p>Price:₹39999</p>
+<p>RAM:8 GB</p>
+<p>Storage:128 GB</p>
+<button onclick="addToCart()">Add to Cart</button>
+<button onclick="buynow()">buynow</button>
+<button onclick="addWishlist(this)">🤍 Wishlist</button>
+<div class="quantity">
+<button onclick="changeQuantity('qty3','total3',39999,-1)">-</button>
+<span id="qty3">1</span>
+<button onclick="changeQuantity('qty3','total3',39999,1)">+</button>
+</div>
+<p>Total: ₹<span id="total3">39999</span></p>
+</div>
+<div class="card">
+<img src="images/phone4.jpeg" alt="MobileMart Ultra">
+<h3>MobileMart Ultra</h3>
+<p>Price:₹45900</p>
+<p>RAM:10 GB</p>
+<P>Storage 180 GB</P>
+<button onclick="addToCart()">Add to Cart</button>
+<button onclick="buynow()">buynow</button>
+<button onclick="addWishlist(this)">🤍 Wishlist</button>
+<div class="quantity">
+<button onclick="changeQuantity('qty4','total4',45900,-1)">-</button>
+<span id="qty4">1</span>
+<button onclick="changeQuantity('qty4','total4',45900,1)">+</button>
+</div>
+<p>Total: ₹<span id="total4">45900</span></p>
+</div>
+</section>
+<section class="contact">
+<h2>Contact Us</h2>
+<input type="text" id="name" placeholder="Enter Your Name"><br><br>
+<input type="email" id="email" placeholder="Enter Your Email"><br><br>
+<textarea id="messageBox" placeholder="Enter Your Message"></textarea><br><br>
+<button onclick="sendMessage()">Send Message</button>
+<p id="contactMessage"></p>
+</section>
+<footer>
+<p>© 2026 MobileMart | Designed & Developed by Janani</p>
+</footer>
+<script src="script.js"></script>
+</div>
+</body>
+</html>
